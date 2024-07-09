@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encripter</title>
+    <link
+      rel="icons"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="logo" id="logo" />
+    </header>
+    <main>
+      <textarea
+        name="inputString"
+        id="inputString"
+        placeholder="Ingrese el texto aqui"></textarea>
+      <div class="error">
+        <img
+          src="error_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"
+          alt="errorIcon"
+          id="errorIcon" />
+        <p id="error">Solo letras minúsculas y sin acentos</p>
+      </div>
+      <div class="buttons">
+        <button id="encriptar" onclick="encryptText()">Encriptar</button>
+        <button id="desencriptar" onclick="decryptText()">Desencriptar</button>
+      </div>
+    </main>
+    <footer>
+      <div id="CoutputString">
+        <div id="Cmuneco">
+          <img src="Muñeco.png" alt="Muñeco" id="muneco" />
+          <span>
+            <h2>Ningun mensaje fue encontrado</h2>
+            <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+          </span>
+        </div>
+        <textarea name="outputString" id="outputString" disabled></textarea>
+        <button id="copy" onclick="copyText()">Copiar</button>
+      </div>
+    </footer>
+    <script src="encripter.js"></script>
+  </body>
+</html>
